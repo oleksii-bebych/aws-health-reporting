@@ -18,3 +18,10 @@ $ terraform init
 $ terraform plan
 $ terraform apply
 ```
+
+## Inputs
+| Name | Description |
+|------|-------------|
+| email_from | Email FROM which the report will be sent via Amazon SES |
+| email_to | Email TO which the report will be sent via Amazon SES |
+| output_bucket_name | S3 bucket where to upload report to. If needed, MAKE SURE, S3 Bucket Policy allows s3:PutObject from the Lambda |
